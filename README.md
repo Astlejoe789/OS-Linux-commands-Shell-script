@@ -551,6 +551,7 @@ chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
+<img width="685" height="182" alt="image" src="https://github.com/user-attachments/assets/73a804d8-7d9a-4d9d-890e-c0ebbeaf04fb" />
 
 
 # check file ownership
@@ -578,6 +579,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+<img width="587" height="148" alt="image" src="https://github.com/user-attachments/assets/46a5597a-2f9d-40b4-9bc4-4affd95bf96f" />
 
 # check if with file location
 cat>ifnested.sh 
@@ -624,6 +626,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
+<img width="671" height="288" alt="image" src="https://github.com/user-attachments/assets/e5193311-4e5a-4855-97ad-d54c55f99634" />
 
 
 
@@ -647,27 +650,10 @@ fi
 ```
 
 
-cat iftest.sh 
-```bash
-\#!/bin/bash
-val1=10
-val2=11
-if [ $val1 -gt 5 ]
-then
-echo “The test value $val1 is greater than 5”
-fi
-if [ $val1 -eq $val2 ]
-then
-echo “The values are equal”
-else
-echo “The values are different”
-fi
-```
 
-$ chmod 755 iftest.sh
- 
-$ ./iftest.sh 
-##OUTPUT
+## OUTPUT
+
+<img width="705" height="190" alt="image" src="https://github.com/user-attachments/assets/f1694ce3-8c25-4bcb-b3f2-6a5b01dfb5fb" />
 
 # check if a file
 cat > ifnested.sh 
@@ -690,33 +676,15 @@ else
 echo “Sorry, the object does not exist”
 fi
 ^d
-```
-
-cat ifnested.sh 
-```bash
-\#!/bin/bash
-if [ -e $HOME ]
-then
-echo “$HOME The object exists, is it a file?”
-if [ -f $HOME ]
-then
-echo “Yes,$HOME it is a file!”
-else
-echo “No,$HOME it is not a file!”
-if [ -f $HOME/.bash_history ]
-then
-echo “But $HOME/.bash_history is a file!”
-fi
-fi
-else
-echo “Sorry, the object does not exist”
-fi
-```
 
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-##OUTPUT
+```
+
+## OUTPUT
+<img width="507" height="201" alt="image" src="https://github.com/user-attachments/assets/d9f4ef5c-4c26-4d27-ad55-f495288b433d" />
+
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -746,6 +714,7 @@ $ chmod 755 elifcheck.sh
 $ ./elifcheck.sh 
 ## OUTPUT
 
+<img width="535" height="162" alt="image" src="https://github.com/user-attachments/assets/54194aeb-8fa7-4a90-ab11-1a0ee8598737" />
 
 # testing compound comparisons
 cat> ifcompound.sh 
@@ -761,6 +730,8 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+
+<img width="503" height="150" alt="image" src="https://github.com/user-attachments/assets/025e5767-9c5f-4ba6-85cd-9ef4757f9da6" />
 
 # using the case command
 cat >casecheck.sh 
@@ -780,7 +751,11 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+
+## OUTPUT
+
+ <img width="448" height="142" alt="image" src="https://github.com/user-attachments/assets/544389ae-fe8e-49f0-844c-fa241da6dd7d" />
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -795,22 +770,12 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
- 
-cat untiltest.sh 
-```bash
-\#using the until command
-var1=100
-until [ $var1 -eq 0 ]
-do
-echo $var1
-var1=$[ $var1 - 25 ]
-done
-``` 
-$ chmod 755 untiltest.sh
- 
- 
- 
+
+ ## OUTPUT
+
+ <img width="412" height="402" alt="image" src="https://github.com/user-attachments/assets/f78670bb-90bb-4017-beda-3347cc66099f" />
+
+  
 cat forin1.sh 
 ```bash
 \#!/bin/bash
@@ -822,7 +787,11 @@ done
  ```
  
 $ chmod 755 forin1.sh
+
+ ## OUTPUT
  
+ <img width="565" height="350" alt="image" src="https://github.com/user-attachments/assets/2344291e-0e49-49c2-9844-ff8903b90ba1" />
+
  
 cat forin2.sh 
 ```bash
@@ -836,18 +805,10 @@ done
  
 $ chmod 755 forin2.sh
  
-cat forin2.sh 
-```bash
-\#!/bin/bash
-\# another example of how not to use the for command
-for test in I don't know if this'll work
-do
-echo “word:$test”
-done
-```
-$ chmod 755 forin2.sh
+## OUTPUT 
+<img width="502" height="345" alt="image" src="https://github.com/user-attachments/assets/49dd1db3-9452-4e34-a726-ff62b07afaf0" />
+
  
-$ ./forin2.sh 
  
 cat forin3.sh 
 ```bash
@@ -859,7 +820,13 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- 
+
+## OUTPUT
+
+<img width="585" height="282" alt="image" src="https://github.com/user-attachments/assets/8e8116dc-be0a-4a60-b887-413c19fec24f" />
+
+# cat cities
+
 cat forin1.sh 
 ```bash
 #!/bin/bash
@@ -872,27 +839,10 @@ done
 $ chmod 755 forin1.sh
 
 ## OUTPUT
-cat forinfile.sh 
-```bash
-#!/bin/bash
-# reading values from a file
-file="cities"
-for state in `cat $file`
-do
-echo "Visit beautiful $file“
-done
-```
-$ chmod 777 forinfile.sh
-$ cat cities
-Hyderabad
-Alampur
-Basara
-Warangal
-Adilabad
-Bhadrachalam
-Khammam
 
-## OUTPUT
+<img width="436" height="337" alt="image" src="https://github.com/user-attachments/assets/12ee8173-3c7c-452e-8d7e-445a4a3697d1" />
+
+
 
 
 cat forctype.sh 
@@ -938,6 +888,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
+
 
  
 cat forbreak.sh 
