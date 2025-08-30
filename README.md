@@ -845,7 +845,8 @@ $ chmod 755 forin1.sh
 
 
 
-cat forctype.sh 
+## cat forctype.sh 
+
 ```bash
 #!/bin/bash
 # testing the C-style for loop
@@ -856,9 +857,13 @@ done
 ````
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
+
 ## OUTPUT
 
-cat forctype1.sh 
+<img width="512" height="278" alt="image" src="https://github.com/user-attachments/assets/5def622c-68ee-4cb5-bc7c-98e3caf3bdf9" />
+
+
+## cat forctype1.sh 
 ```bash
 #!/bin/bash
 # multiple variables
@@ -871,7 +876,10 @@ $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
 
-cat fornested1.sh 
+<img width="452" height="250" alt="image" src="https://github.com/user-attachments/assets/6986a8c8-ccae-4b41-930c-13600fc7d90c" />
+
+
+## cat fornested1.sh 
 ```bash
 #!/bin/bash
 # nesting for loops
@@ -889,9 +897,10 @@ $ chmod 755 fornested1.sh
 $ ./fornested1.sh 
  ## OUTPUT
 
+<img width="453" height="296" alt="image" src="https://github.com/user-attachments/assets/90edd21c-5a08-4623-b90a-91b27a8709b3" />
 
  
-cat forbreak.sh 
+# cat forbreak.sh 
 ```bash
 #!/bin/bash
 # breaking out of a for loop
@@ -905,13 +914,17 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
 
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
+
+## OUTPUT
+
+<img width="632" height="417" alt="image" src="https://github.com/user-attachments/assets/81293f48-9f91-4e63-a721-0610059fb09f" />
+
  
-cat forbreak.sh 
+# cat forbreak.sh 
 ```bash
 #!/bin/bash
 # breaking out of a for loop
@@ -931,8 +944,12 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
+
+<img width="455" height="227" alt="image" src="https://github.com/user-attachments/assets/f4940e58-0d41-4e43-abbf-08e543814506" />
+
  
-cat exread.sh 
+# cat exread.sh 
+
 ```bash
 #!/bin/bash
 # testing the read command
@@ -946,8 +963,11 @@ $ chmod 755 exread.sh
 $ ./exread.sh 
 ## OUTPUT
 
+<img width="472" height="217" alt="image" src="https://github.com/user-attachments/assets/38691664-eb13-49ee-9516-d114614314db" />
 
- cat exread1.sh
+
+# cat exread1.sh
+
 ```bash
 #!/bin/bash
 # testing the read command
@@ -955,12 +975,11 @@ read -p "Enter your name: " name
 echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
-
+$ ./exread1.sh 
 ## OUTPUT
 
+<img width="525" height="237" alt="image" src="https://github.com/user-attachments/assets/6f3c8cec-443d-4238-8170-7623071310f8" />
 
-
-$ ./exread1.sh 
  
 cat funcex.sh
 ```bash
@@ -977,14 +996,16 @@ else
 echo "Usage: badtest1 a b"
 fi
 ```
-## OUTPUT
  ./funcex.sh 
 
  
  ./funcex.sh 1 2
 
+## OUTPUT
+
+<img width="391" height="187" alt="image" src="https://github.com/user-attachments/assets/301f2fe1-5a9b-4137-931c-3aa5a4c8ebd4" />
  
-cat argshift.sh
+# cat argshift.sh
 ```bash
 #!/bin/bash 
  while (( "$#" )); do 
@@ -993,9 +1014,10 @@ cat argshift.sh
 done
 ```
 $ chmod 777 argshift.sh
+$ ./argshift.sh 1 2 3
 
 ## OUTPUT
-$ ./argshift.sh 1 2 3
+
  
  cat argshift1.sh
 ```bash
